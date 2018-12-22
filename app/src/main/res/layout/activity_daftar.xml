@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar">
+
+    <RelativeLayout
+        android:id="@+id/layAdd1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5e8df4">
+
+        <TextView
+            android:id="@+id/tvId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Form Registrasi"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_below="@+id/layAdd1"
+        android:id="@+id/txtusr"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Nama Lengkap"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/txtpwd"
+        android:layout_alignStart="@+id/txtpwd"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_below="@+id/txtusr"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/txtnohp"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="No HP"
+        tools:layout_editor_absoluteY="218dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="E-mail"
+        tools:layout_editor_absoluteY="218dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtnohp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/txtpwd"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        tools:layout_editor_absoluteY="218dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtemail"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#3087d7"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/txtpwd"/>
+    <Button
+        android:id="@+id/btnext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Exit"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#3087d7"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/btnDaftar"/>
+
+</RelativeLayout>

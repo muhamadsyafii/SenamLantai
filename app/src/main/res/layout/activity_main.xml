@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layAdd"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#5e8df4">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Selamat Datang"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_below="@id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Aplikasi Senam Lantai"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/layAdd"
+        android:id="@+id/tvBs"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please, Insert Username and Password for your Access this Apps"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="322dp"
+        android:layout_height="64dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Username"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@id/tvBs"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="319dp"
+        android:layout_height="56dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="password"
+        tools:layout_editor_absoluteY="218dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#3087d7"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/password"/>
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:onClick="btnreg"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#3087d7"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/btnLogin"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Exit"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#3087d7"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/btnReg"/>
+
+
+
+</RelativeLayout>
